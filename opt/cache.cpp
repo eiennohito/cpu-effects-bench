@@ -6,19 +6,6 @@
 
 #include "benchmark/benchmark_api.h"
 
-std::vector<int> fill_vector(long size) {
-  std::vector<int> vec(size);
-
-  std::mt19937 rng;
-  std::uniform_int_distribution<int> dst(std::numeric_limits<int>::min(), std::numeric_limits<int>::max());
-
-  std::for_each(vec.begin(), vec.end(), [&rng, &dst](int& x) {
-    x = dst(rng);
-  });
-
-  return std::move(vec);
-}
-
 template <typename T>
 char slow_cnt(T x) {
   char res = 0;
