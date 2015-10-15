@@ -4,6 +4,7 @@
 
 #include <vector>
 #include <random>
+#include <algorithm>
 #include "benchmark/benchmark_api.h"
 
 //http://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-an-unsorted-array
