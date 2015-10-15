@@ -5,7 +5,7 @@ set(BENCHMARK_ENABLE_TESTING OFF)
 
 add_subdirectory(gbench)
 
-add_compile_options("-std=c++14")
+add_compile_options("-std=c++11")
 
 add_subdirectory(noopt)
 add_subdirectory(opt)
