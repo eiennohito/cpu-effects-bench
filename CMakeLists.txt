@@ -8,5 +8,5 @@ add_subdirectory(gbench)
 add_compile_options("-std=c++14")
 
 add_subdirectory(noopt)
-#include_directories(opt)
+add_subdirectory(opt)
 
