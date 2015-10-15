@@ -54,9 +54,11 @@ public:
     using restype = decltype(engine());
     size_t totalsize = datasize / sizeof(restype);
 
+    std::uniform_int_distribution<restype> dist;
+
     restype *ptr = reinterpret_cast<restype*>(data_);
     for (size_t i = 0; i < totalsize; ++i) {
-      ptr[i] = engine();
+      ptr[i] = dist(engine);
     }
   }
 
