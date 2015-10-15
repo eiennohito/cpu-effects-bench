@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include <algorithm>
 #include "benchmark/benchmark_api.h"
 
 double sum1(double* vals, size_t cnt) {
