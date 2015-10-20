@@ -9,7 +9,7 @@ Google benchmark is included as submodule.
 So, use `git submodule init && git submodule update` after initial clone.
 
 CMake is invoked like `cmake -DBUILD_TYPE=Release ../cpu-effects-bench` from 
-a directory that lies on the same level with the closed repository.
+a directory that lies on the same level with the cloned repository.
 CMake do not support in source builds.
 After that just do `make` and run benchmarks.
 
