@@ -1,3 +1,9 @@
+Right now there are three benchmarks:
+
+* Cache effects via POPCNT in `opt/cache.cpp`
+* Superscalar execution via double sum in `noopt/superscalar.cpp`
+* Branch Prediction/Misprediction in `noopt/branches.cpp`
+
 Use CMake to build this.
 Google benchmark is included as submodule.
 So, use `git submodule init && git submodule update` after initial clone.
